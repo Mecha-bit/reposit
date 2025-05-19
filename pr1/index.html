@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Задачи по обработке событий</title>
+<style>
+  /* Для эффекта подсветки при наведении */
+  .hover-element {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 20px;
+    transition: box-shadow 0.3s;
+  }
+</style>
+</head>
+<body>
+
+<!-- 1. Кнопка для изменения цвета фона -->
+<button id="colorButton">Поменять цвет фона</button>
+
+<!-- 2. Инпут и вывод длины текста -->
+<input type="text" id="textInput" placeholder="Введите текст" />
+<p id="textLength">Длина текста: 0</p>
+
+<!-- 3. Элемент для подсветки при наведении -->
+<div id="hoverDiv" class="hover-element">Наведи курсор</div>
+
+<script>
+  // 1. Создайте кнопку, которая меняет цвет фона страницы при клике.
+  const colorButton = document.getElementById('colorButton');
+  colorButton.addEventListener('click', () => {
+    document.body.style.backgroundColor = getRandomColor();
+  });
+
+  // Функция для генерации случайного цвета
+  function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
+  // 2. Сделайте инпут, который выводит длину введённого текста в реальном времени.
+  const textInput = document.getElementById('textInput');
+  const textLengthDisplay = document.getElementById('textLength');
+
+  textInput.addEventListener('input', (event) => {
+    const length = event.target.value.length;
+    textLengthDisplay.textContent = `Длина текста: ${length}`;
+  });
+
+  // 3. Реализуйте эффект "подсветки" при наведении на элемент
+  const hoverDiv = document.getElementById('hoverDiv');
+
+  hoverDiv.addEventListener('mouseover', () => {
+    hoverDiv.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
+  });
+
+  hoverDiv.addEventListener('mouseout', () => {
+    hoverDiv.style.boxShadow = '';
+  });
+</script>
+</body>
+</html>
