@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/images/background.jpg) fixed center/cover;
+}
+body .greetings{
+    width: 20%;
+    min-height: 5vh;
+    font-size: 35px;
+    color: #fff;
+    margin: 15% 40% 0 40%;
+    backdrop-filter: blur(3px);
+    border-radius: 5px;
+    box-shadow: 0 0 10.3px 3px #fff;
+    text-align: center;
+    position: relative;
+    padding: 5px 0 0 0;
+    z-index: 999;
+}
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    min-height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    margin: -15% 0 0 0;
+    color: #fff;
+    z-index: 1000;
+}
+header .logo{
+    margin: 4rem 0 3rem 3rem;
+    width: 3vw;
+    height: 4vh;
+    box-shadow: 0 0 10.3px 2px #fff;
+    border: 2px solid #fff;
+    background: url(/images/file.svg)  center/cover;
+    border-radius: 5px;
+}
+header h1{
+    width: 25%;
+    margin: 4% 0 0 0.5%;
+}
+header nav{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    margin: 3% 0 3% 15%;
+}
+.users {
+    text-decoration: underline;
+}
+header nav a{
+    margin: 2.5% 0 0 4%;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+}
+header nav a:hover{
+     text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+}
+form button {
+    width: 150%;
+    min-height:5vh;
+    margin:25% 0 0 80%;
+    background-color:#ebebeb;
+    border:none;
+    border-radius:5px;
+    font-size: 20px;
+}
+form button:hover{
+    transition: 1s;
+    box-shadow:0 0 10.3px 1px #fff;
+}
+form button:not(:hover){
+    transition: 1s;
+    box-shadow: none;
+}
+table {
+    display: block;
+    margin: 2% auto 5% auto;
+    width: 47.8%;
+    min-height: 60vh;
+    background-color: rgb(0, 0, 0,0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 10.3px 3px #9c9c9c;
+    backdrop-filter: blur(5px);
+    border:1px solid #cac9c9;
+    padding-top: 5%;
+    color:#fff;
+    z-index: 1;
+    table-layout: fixed;
+}
+table th{
+    border: 1px solid #fff;
+    text-align: center;
+}
+table td{
+    border: 1px solid #fff;
+    text-align: center;
+}
+.authHref {
+    display: block;
+}

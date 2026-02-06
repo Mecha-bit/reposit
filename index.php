@@ -1,0 +1,33 @@
+<?php
+require_once('db.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="register.php" method = "POST">
+        <h1>Регистрация</h1>
+        <label>Логин</label><br>
+        <input type="text" name = "login" placeholder = "login" required> <br>
+        <label>Пароль</label> <br>
+        <input type="password" name = "password" placeholder = "password" required> <br>
+        <label>ФИО</label> <br>
+        <input type="text" name = "fio" placeholder = "FIO" required> <br>
+        <label>Телефон</label> <br>
+        <input type="tel" name = "phone" placeholder = "+7(XXX)XXX-XX-XX" required> <br>
+        <label>Почта</label> <br>
+        <input type="email" name = "email" placeholder = "example@gmail.com" required> <br>
+        <label>Дата рождения</label> <br>
+        <input type="date" name = "date" required> <br>
+        <button type = "submit">Зарегистрироватья</button> <br>
+        <div class="authHref">
+            <p>Уже есть аккаунт?<a href="indexAuth.php">Войти в аккаунт</a></p>
+        </div>
+    </form>
+</body>
+</html>

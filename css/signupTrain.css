@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/images/background.jpg) fixed center/cover;
+}
+body .greetings{
+    width: 20%;
+    min-height: 5vh;
+    font-size: 35px;
+    color: #fff;
+    margin: 3% 40% 0 40%;
+    backdrop-filter: blur(3px);
+    border-radius: 5px;
+    box-shadow: 0 0 10.3px 3px #fff;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+header {
+    display: flex;
+    width: 100%;
+    min-height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 0 0 0 0;
+    color: #fff;
+}
+header .logo{
+    margin: 3rem 0 3rem 3rem;
+    width: 2vw;
+    height: 3.4vh;
+    box-shadow: 0 0 10.3px 2px #fff;
+    border: 2px solid #fff;
+    background: url(/images/file.svg)  center/cover;
+    border-radius: 5px;
+}
+header h1{
+    width: 15%;
+    margin: 2.9% 0 0 0.5%;
+}
+header nav{
+    width: 40%;
+    height: 10%;
+    margin: 3% 0 3% 47%;
+}
+header nav a{
+    margin: 0 0 0 4%;
+    text-decoration:none;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}
+form {
+    display: block;
+    margin: 2% auto 5% auto;
+    width: 35%;
+    min-height: 60vh;
+    background-color: rgb(0, 0, 0,0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 10.3px 3px #9c9c9c;
+    backdrop-filter: blur(5px);
+    border:1px solid #cac9c9;
+    padding-top: 5%;
+}
+form h1 {
+    width: 55%;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    margin: -4% 23% 0 23%;
+}
+form input{
+    width: 85%;
+    min-height: 3vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+}
+form select{
+    width: 85%;
+    min-height: 3vh;
+    background-color: #2F2F2F;
+    border: none;
+    border-radius: 5px;
+    margin: 1% 7% 0 7%;
+    color: #fff;
+}
+form select option{
+    background-color: #2F2F2F;
+    color: #fff;
+}
+form select option:hover{
+    box-shadow: 0 0 10.3px 2px #fff;
+    background-color:#4b4b4b ;
+}
+form .date{
+    width: 40%;
+    min-height: 3vh;
+    margin: 1% 0 0 7%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+}
+form .time{
+    width: 40%;
+    min-height: 3vh;
+    margin: 1% 0 0 4%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+}
+form textarea{
+    width: 85%;
+    min-height: 10vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    margin: 1% 7% 0 7%;
+    color:#fff;
+    resize: none;
+}
+form input{
+    margin: 1% 7% 0 7%;
+}
+form label{
+    margin: 8% 7% 0 7%;
+}
+form    input,input::placeholder, label, a, p {
+    color: #fff;
+}
+form button {
+    width: 85%;
+    min-height:5vh;
+    margin:10% 7% 0 7%;
+    background-color:#fff;
+    border:none;
+    border-radius:5px;
+    box-shadow:0 0 10.3px 1px #fff;
+    font-size: 20px;
+}
+form input:hover {
+    box-shadow:0 0 3px 1px #fff;
+}
+form input:focus {
+    border:none;
+    box-shadow:0 0 5px 1px #fff;
+}
+form a,p {
+    margin: 1% 40% 0 40%;
+}
+.authHref {
+    display: block;
+}
